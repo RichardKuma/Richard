@@ -1313,4 +1313,8 @@ public class Mat {
     private static native double[] nGet(long self, int row, int col);
 
     private static native String nDump(long self);
+
+    static {
+        System.loadLibrary("opencv_java3");
+    }
 }
